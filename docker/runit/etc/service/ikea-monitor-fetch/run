@@ -1,0 +1,4 @@
+#!/bin/bash
+cd /srv/ikea-monitor
+exec 2>&1
+exec chpst -U www-user node src/fetch.js
